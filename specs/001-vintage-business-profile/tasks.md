@@ -5,18 +5,18 @@
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [ ] T001 Initialize a new Next.js (TypeScript) project in the `frontend/` directory.
-- [ ] T002 [P] Install necessary dependencies: `tailwindcss`, `framer-motion`, `react-spring`, `jest`, `@testing-library/react`.
-- [ ] T003 [P] Configure Tailwind CSS with the vintage theme colors and fonts.
-- [ ] T004 [P] Configure Jest and React Testing Library for the project.
-- [ ] T005 Create the basic project structure: `src/components`, `src/pages`, `src/services`, `src/styles`, `content`.
+- [X] T001 Initialize a new Next.js (TypeScript) project in the `frontend/` directory.
+- [X] T002 [P] Install necessary dependencies: `tailwindcss`, `framer-motion`, `react-spring`, `jest`, `@testing-library/react`.
+- [X] T003 [P] Configure Tailwind CSS with the vintage theme colors and fonts.
+- [X] T004 [P] Configure Jest and React Testing Library for the project.
+- [X] T005 Create the basic project structure: `src/components`, `src/pages`, `src/services`, `src/styles`, `content`.
 
 ---
 
 ## Phase 2: Foundational (Blocking Prerequisites)
 
-- [ ] T006 Create a service in `frontend/src/services/content.ts` to read and parse Markdown files from the `frontend/content` directory.
-- [ ] T007 [P] [US1] Create placeholder Markdown files in `frontend/content` for the business profile and its sections.
+- [X] T006 Create a service in `frontend/src/services/content.ts` to read and parse Markdown files from the `frontend/content` directory.
+- [X] T007 [P] [US1] Create placeholder Markdown files in `frontend/content` for the business profile and its sections.
 
 ---
 
@@ -28,11 +28,11 @@
 
 ### Implementation for User Story 1
 
-- [ ] T008 [US1] Implement the main page component in `frontend/src/pages/index.tsx` to fetch and display the business profile content.
-- [ ] T009 [P] [US1] Create a `BusinessProfile` component in `frontend/src/components/BusinessProfile.tsx` to display the main profile information.
-- [ ] T010 [P] [US1] Create a `Section` component in `frontend/src/components/Section.tsx` to display the content of a section.
-- [ ] T011 [US1] Apply the vintage theme styling using Tailwind CSS to all components.
-- [ ] T012 [P] [US1] Add basic animations (e.g., fade-in on scroll) to the components using Framer Motion or React Spring.
+- [X] T008 [US1] Implement the main page component in `frontend/src/pages/index.tsx` to fetch and display the business profile content.
+- [X] T009 [P] [US1] Create a `BusinessProfile` component in `frontend/src/components/BusinessProfile.tsx` to display the main profile information.
+- [X] T010 [P] [US1] Create a `Section` component in `frontend/src/components/Section.tsx` to display the content of a section.
+- [X] T011 [US1] Apply the vintage theme styling using Tailwind CSS to all components.
+- [X] T012 [P] [US1] Add basic animations (e.g., fade-in on scroll) to the components using Framer Motion or React Spring.
 
 ---
 
@@ -44,10 +44,10 @@
 
 ### Implementation for User Story 2
 
-- [ ] T013 [US2] Create a `Navigation` component in `frontend/src/components/Navigation.tsx`.
-- [ ] T014 [US2] Implement the routing logic in `frontend/src/pages/profile/[section].tsx` to display the content of a specific section.
-- [ ] T015 [US2] Add smooth page transitions using Framer Motion when navigating between sections.
-- [ ] T016 [P] [US2] Ensure the active navigation link is highlighted.
+- [X] T013 [US2] Create a `Navigation` component in `frontend/src/components/Navigation.tsx`.
+- [X] T014 [US2] Implement the routing logic in `frontend/src/pages/profile/[section].tsx` to display the content of a specific section.
+- [X] T015 [US2] Add smooth page transitions using Framer Motion when navigating between sections.
+- [X] T016 [P] [US2] Ensure the active navigation link is highlighted.
 
 ---
 
