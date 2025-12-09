@@ -39,10 +39,18 @@ As a user, I want to navigate between different sections of the website (e.g., H
 
 - **FR-001**: The system MUST be a web application built with Next.js (latest version).
 - **FR-002**: The system MUST use Tailwind CSS for all styling to create a vintage old paper theme.
-- **FR-003**: The system MUST incorporate animations from the `lucide-react` library to enhance user experience.
-- **FR-004**: The system MUST have a well-defined routing pattern for navigating between different pages/sections.
+- **FR-003**: The system MUST incorporate animations using Framer Motion for complex animations and React Spring for natural-looking ones to enhance user experience.
+- **FR-004**: The system MUST use a nested routing pattern for navigating between different pages/sections (e.g., `/profile/about`, `/profile/services`).
 - **FR-005**: The website MUST be responsive and adapt to different screen sizes, from mobile phones to desktop monitors.
 - **FR-006**: The business profile information (e.g., text, images) MUST be managed via Markdown files.
+- **FR-007**: The website MUST adhere to WCAG 2.1 AA accessibility standards.
+
+## Clarifications
+
+### Session 2025-12-09
+- Q: What should the URL structure for the main pages/sections of the business profile be? → A: A nested structure (e.g., `/profile/about`, `/profile/services`).
+- Q: Which library should be used for animations? → A: Framer Motion for complex animations, React Spring for natural-looking ones.
+- Q: Should the website adhere to any specific accessibility standards? → A: Yes, WCAG 2.1 AA.
 
 ### Edge Cases
 
@@ -53,7 +61,7 @@ As a user, I want to navigate between different sections of the website (e.g., H
 
 - The vintage old paper theme assets (e.g., background textures, fonts) will be provided.
 - The content for the business profile (text and images) will be provided.
-- The specific animations from `lucide-react` to be used will be decided during the design/implementation phase.
+
 
 ### Key Entities *(include if feature involves data)*
 

@@ -208,3 +208,10 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- TypeScript (latest) + Next.js, React, Tailwind CSS, Framer Motion, React Spring (001-vintage-business-profile)
+- Markdown files (001-vintage-business-profile)
+
+## Recent Changes
+- 001-vintage-business-profile: Added TypeScript (latest) + Next.js, React, Tailwind CSS, Framer Motion, React Spring
