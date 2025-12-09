@@ -3,8 +3,7 @@ import { Merriweather, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { getSortedContentData } from "@/services/content";
-import { AnimatePresence, motion } from "framer-motion";
-import { headers } from "next/headers";
+import TransitionWrapper from "@/components/TransitionWrapper"; // Import the new component
 
 const merriweather = Merriweather({
   weight: ["300", "400", "700"],
@@ -29,27 +28,15 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const sections = await getSortedContentData("profile");
-  const headersList = headers();
-  const pathname = headersList.get("x-invoke-path") || "/";
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${merriweather.variable} ${playfairDisplay.variable} font-merriweather bg-cream text-accent antialiased`}
       >
         <div className="container mx-auto px-4">
-          <Navigation sections={sections} currentPath={pathname} />
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={pathname}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
-            >
-              {children}
-            </motion.div>
-          </AnimatePresence>
+          <Navigation sections={sections} />
+          <TransitionWrapper>{children}</TransitionWrapper>
         </div>
       </body>
     </html>
