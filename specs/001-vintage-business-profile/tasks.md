@@ -54,7 +54,7 @@
 ## Phase 5: Polish & Cross-Cutting Concerns
 
 - [X] T017 [P] Write unit tests for all created components.
-- [ ] T018 [P] Write integration tests for the user stories.
+- [X] T018 [P] Write integration tests for the user stories.
 - [ ] T019 [P] Optimize the application for performance (Lighthouse score of 90+).
 - [ ] T020 [P] Ensure the website is fully responsive and works on all major devices.
 - [ ] T021 [P] Ensure the website adheres to WCAG 2.1 AA accessibility standards.
