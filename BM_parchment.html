@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>B&amp;M Garments — Home</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#2b1f18;
+      --cream:#efe2c9;
+      --shadow: rgba(0,0,0,0.25);
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Merriweather', serif;
+      color:var(--accent);
+      background-color:var(--cream);
+      background-image:
+        radial-gradient(rgba(0,0,0,0.04) 0 1px, transparent 1px),
+        url('parchment.jpg'); /* <-- replace with your texture image */
+      background-size: cover;
+      background-position: center;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* container */
+    .wrap{
+      max-width:900px;
+      margin: 36px auto;
+      padding: 36px 30px;
+      text-align:center;
+      backdrop-filter: none;
+      background: linear-gradient(rgba(255,255,255,0.03), rgba(255,255,255,0.03));
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      border-radius: 6px;
+    }
+
+    /* top nav */
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom: 28px;
+    }
+    .nav-left, .nav-right{display:flex;gap:20px;align-items:center}
+    .nav-left a, .nav-right a{
+      text-decoration:none;
+      color:var(--accent);
+      font-size:15px;
+      letter-spacing:1px;
+    }
+
+    /* logo stack */
+    .logo{
+      text-align:center;
+      margin: 6px 0 12px;
+      line-height:1;
+    }
+    .logo .brand{
+      font-family:'Playfair Display', serif;
+      font-size:56px;
+      letter-spacing:2px;
+      color:var(--accent);
+      font-weight:900;
+      margin:0;
+    }
+    .logo .sub{
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      margin-top:6px;
+      font-weight:700;
+    }
+
+    /* hero headline */
+    .hero{
+      margin:40px 0 26px;
+    }
+    .hero h1{
+      font-family:'Playfair Display', serif;
+      font-size:72px;
+      line-height:0.98;
+      margin:0;
+      font-weight:900;
+      color:var(--accent);
+      text-shadow: 0 2px 0 rgba(255,255,255,0.12);
+    }
+
+    .hero .tag{
+      margin-top:18px;
+      font-style:italic;
+      font-size:20px;
+      color: #3c2f28;
+    }
+
+    .desc{
+      margin:26px auto 36px;
+      max-width:680px;
+      font-size:18px;
+      color: #332921;
+      line-height:1.6;
+      letter-spacing:0.2px;
+    }
+
+    .cta{
+      display:inline-block;
+      padding:14px 36px;
+      background: #2f241d;
+      color: #efe2c9;
+      text-decoration:none;
+      font-weight:700;
+      letter-spacing:1px;
+      border-radius:4px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .cta:hover{ transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.28); }
+
+    /* faint vignette / aged border */
+    .vignette{
+      pointer-events:none;
+      position:fixed;
+      inset:0;
+      box-shadow: inset 0 0 120px rgba(0,0,0,0.25);
+      mix-blend-mode:multiply;
+      z-index:0;
+    }
+
+    /* responsive */
+    @media (max-width:720px){
+      .wrap{padding:26px}
+      .logo .brand{font-size:44px}
+      .hero h1{font-size:40px}
+      .desc{font-size:16px}
+      header{flex-direction:column; gap:8px; align-items:center}
+      .nav-left, .nav-right{order:2; gap:12px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main" aria-labelledby="brand">
+    <header>
+      <nav class="nav-left" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+      </nav>
+
+      <div class="logo" id="brand" aria-hidden="false">
+        <div class="brand">B&amp;M</div>
+        <div class="sub">Garments<br><small style="font-weight:700;letter-spacing:1px">Stitching Unit</small></div>
+      </div>
+
+      <nav class="nav-right" aria-label="Secondary">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-label="Hero">
+      <h1>PRECISION<br>IN EVERY<br>STITCH</h1>
+      <div class="tag">Crafted with discipline. <span style="display:block">Delivered with pride.</span></div>
+    </section>
+
+    <p class="desc">
+      B&amp;M is a premium garments stitching unit providing reliable, high-quality stitching services for brands, factories, and wholesalers.
+      Our production line is powered by skilled craftsmen, modern machines, and a commitment to consistency.
+    </p>
+
+    <a class="cta" href="#quote" role="button">Get a Quote</a>
+  </div>
+
+  <!-- aged vignette overlay -->
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- NOTES:
+       1) Replace 'parchment.jpg' in the CSS with the actual texture file (local or hosted).
+       2) You can tint the texture by adding a semi-opaque layer or adjusting background-color opacity.
+  -->
+</body>
+</html>
