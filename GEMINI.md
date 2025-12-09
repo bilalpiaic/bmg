@@ -212,6 +212,7 @@ See `.specify/memory/constitution.md` for code quality, testing, performance, se
 ## Active Technologies
 - TypeScript (latest) + Next.js, React, Tailwind CSS, Framer Motion, React Spring (001-vintage-business-profile)
 - Markdown files (001-vintage-business-profile)
+- TypeScript 5, React 19.2.1, Next.js 16.0.8 + Next.js, React, Tailwind CSS (implied by `tailwind.config.ts` in frontend), Framer Motion, React Spring. (001-update-background-parchment)
 
 ## Recent Changes
 - 001-vintage-business-profile: Added TypeScript (latest) + Next.js, React, Tailwind CSS, Framer Motion, React Spring
